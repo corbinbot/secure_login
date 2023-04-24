@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Register Securely</title>
+        <title>Login Page</title>
         <link rel="stylesheet" href="style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -23,7 +23,7 @@ if (isset($_POST['submit'])) {
 
     <body>
         <div class=" my-4 container col-lg-6 col-md-6">
-            <h1>Register</h1>
+            <h1>Login</h1>
             <form class="my-4" action="" method="post" autocomplete="off">
 
                 <div class="mb-3">
@@ -38,8 +38,11 @@ if (isset($_POST['submit'])) {
                 </div>
 
                 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
-
+                <br>
                 <a href="index.php">Register Here</a>
+                <br>
+                <a href="forgot-password.php">Forgot Password</a>
+                <br>
                 <p class="error"><?php echo @$response; ?></p>
 
             </form>

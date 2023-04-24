@@ -58,7 +58,6 @@ if (isset($_POST['submit'])) {
                 <p class="error"><?php echo @$response; ?></p>
                 <?php
                 }
-
                 ?>
 
             </form>
